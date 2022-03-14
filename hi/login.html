@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Learning Planets</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="login.css">
+	</head>
+
+	<body>
+		<div class="banner1" style = "min-height: 100%;"title="Space">
+			<br><br><br><br><br><br>
+            		<div class="float-left">
+						<h1>Log In</h1>
+                        <br>
+                        <input type="radio" id="student" name="account"> 
+            	        <label for="student">Student</label>
+                        <input type="radio" id="teacher" name="account">
+                        <label for="teacher">Teacher</label>
+                        <br><br>
+
+                        <label>Email: </label> <!--label used so everything appears on the same line-->
+                        <br>
+                        <input type="email" id="user" autofocus onfocusout = "InputCheck()"> <!--username input box-->
+                        <br>
+                        <label>Password:</label>
+                        <br>
+        	            <input type="password" id="pass" onfocusout = "InputCheck()"><!--password input-->
+	                    <br>
+                        <button onclick="UserCheck()">Login</button><!--runs check function in javascript on button press-->
+
+                        <p id = "error1" style = "color:red"></p><!--where the error appears if somethings invalid-->
+                        <p id = "error2" style = "color:red"></p>
+					</div>
+			<div class="float-right">
+				<img src="./Images/Logo2.png" alt="Website logo">
+				<img src="./Images/Alien.png" alt="Alien Mascot" style="width:35%; height:auto;">
+			</div>
+		</div>
+	</body>
+</html>
