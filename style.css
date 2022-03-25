@@ -1,0 +1,215 @@
+
+
+			        .topbar { /* bar at the top of the page with links and logo*/
+                background: #353535; /*adds dark grey colour */
+                position:fixed; /*bar does not move on scroll*/
+                top:0; /*bar starts at top of page*/
+                width: 100%; /*goes across the whole page*/
+                z-index: 10; /*top priority in appearing above everything else*/
+                transition: top 0.3s;
+          }
+              .topbar a, .topbar img {
+                float: left; /* boxes stay to the left of the bar */
+                text-align: center; /* text is in the centre of box */
+                padding: 15px; /*adds space between text */
+                font-size: 25px;
+                text-decoration: none; /*makes link look like normal text instead of purple */
+                color : white;
+          }
+              .topbar a:hover {
+                background: #af7431; /*when the mouse is hovering over a box it turns orange and the text goes black over a period of half a second*/
+                color: black;
+                transition: 0.5s;
+          }
+              .main {
+                margin-top : 56.8px; /*main content of the page starts at the bottom of the bar at the top so nothing is lost behind it*/
+          }
+              .banner1, .banner2, .banner3, .banner4, .banner5, .banner6 { /*banners spead across the page and are 500 pixels tall, they do not move with the page so they create a parallax effect*/
+                min-height: 500px;
+                background-attachment: fixed; /*so it doesnt scroll*/
+                background-position: center; /*so centre of image is centre of div*/
+                background-size: cover; /*makes sure image only covers screen width and doesnt go off the page*/
+          }
+              .banner1 {background-image:url("Images/spacebgwstars2.png");}
+  
+              .bannerhead { /*text that appears in the middle of a banner*/
+                text-align: center;
+                vertical-align: middle;
+                line-height: 45px;
+                color:white;
+
+          }
+              .box1 { /*white boxes that contain most of the text on the pages*/
+                width:95%; /* 95 so nothing ends up being too close to the edge or going over*/
+                height:auto; /*automatically fits to needed size*/
+                margin-left:3%;
+                padding-top:4%;
+                padding-bottom:4%;
+          }
+              .pictureleft { /*class that makes image stay on the left of a box and has a white border, on the index page it allows the image to hang under the box (unintentional but it looks good)*/
+                margin-left:3%;
+                float:left;
+                height:auto;
+                width:18%;
+                min-width: 200px;
+                border:5px solid white;
+                margin-right:3%;
+          }
+              .pictureright, .pictureright1 { /*same as above just on the other side of the page*/
+                margin-right:5%;
+                float:right;
+                height:auto;
+                width:20%;
+                min-width: 200px;
+                border:5px solid white;
+                margin-left:3%;
+          }
+              .pictureright1 {
+                width:40%;
+          }	
+              body {
+               font-family: 'Work Sans', sans-serif; /*sets the font for the p tags and any other text other than the headings*/
+               font-weight: 300;
+               margin: 0px;
+              /*Cursor image must be 32*32 pixels*/
+	            cursor: url("Images/custom.png"), auto;
+          }
+              h1, h2, h3, h4, h5, h6 { /*sets font for the headings*/
+               font-family: 'Montserrat', sans-serif;
+               font-weight: 900;
+          }
+              ul.a {
+                padding: 1%;
+                list-style-type: square;
+          }
+
+              * {
+                margin: 0;
+                padding: 0;
+          }
+              .wrapper {
+                margin: 0 auto;
+                width: 1000px;
+          }
+  
+              video {
+                width: 100%
+          }
+              .arrow{
+                top: 0;
+                position:fixed;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+                transition: top 0.3s;
+                color: white;
+                opacity: 0.6;
+                font-size: 50px;
+            }
+              .topbararrow{
+                font-size: 20px;
+              }
+              .planet{
+                width: 85%;
+                height: auto; 
+                padding: 10%;
+              }
+
+              .planet:hover{
+                width: 90%;
+                transition: 0.3s;
+              }
+
+/*CSS for the learn pages*/
+              .learn {
+                position: absolute;
+                margin-left:3%;
+                margin-top:5%;
+                min-width:90%;
+                background: rgba(255, 255, 255, 0);
+                opacity: 85%;
+                outline: 4px solid purple;
+                outline-offset: 15px;
+                color: white;
+            }
+
+            .left-element {
+              float: left;
+            }
+
+            .right-element {
+              float: left;
+              margin-top: 6%;
+            }
+
+/*CSS for the p5.js canvas of game1*/
+              #gameContainer{
+                text-align:center;
+              }
+
+              #defaultCanvas0{
+                border-style:solid;
+                border-width: 3%;
+                border-color: rgb(90, 4, 90);
+              }
+
+/*CSS for profile page*/
+            .profile{
+              padding-top: 95px;
+              color:white;
+            }
+            .center {
+              text-align: center;
+              color:white;
+            }
+            .container .alien{
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+            }
+
+            .container .alien>img{
+              width:19%;
+              max-width: 130px;
+              padding-bottom: 5px;
+            }
+
+            .container .background{
+              width:30%; 
+              max-width: 200px; 
+            }
+
+            .container{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: flex-end;
+            }
+
+            .button{
+              top:200px;
+            }
+            .colors{
+              margin-left: auto;
+              margin-right: auto;
+              text-align: center;
+              color: white;
+          }
+          .colors .button{
+              min-width: 150px;
+              max-width: 200px;
+              height: 50px;
+          }
+
+          .colors .numberbtn {
+            background-color: black; 
+            border-style: solid;
+            border-color: purple; 
+            color: white; 
+            width: 2%;
+            font-size: 20px;
+          }
+              

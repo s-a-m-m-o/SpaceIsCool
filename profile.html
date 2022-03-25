@@ -1,0 +1,95 @@
+<html>
+    <head>
+    <title>Profile page</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script src = "mainscript.js"></script>
+            <script src = "profile.js"></script>
+
+    </head>
+    <body>
+        <div id="topbar" class="topbar">
+            <a href="index.html">Home Page</a>
+            <a href="./Topic1/topic1.html">Planets</a>
+            <a href="./Topic2/topic2.html">Stars</a>
+            <a href="./Topic3/topic3.html">Topic 3</a>
+            <a href="login.html" style = "float:right">Log In</a>
+        </div>
+
+        <div id = "arrow" class = "arrow">&#11167;</div>
+
+        <div class="banner1" style = "min-height: 100%;">
+            <div class="profile">
+                <div class="container">  
+                    <img src = "./Images/alienbackground2.png"class="background" id="background">
+                    <div class ="alien"><img src = "./Images/alienbody2.png" id="alien"></div>           
+                </div>
+                <div class = "colors" >
+                    <button onclick="changeprofile1()" class= "numberbtn">1</button>
+                    <button onclick="changeprofile2()" class= "numberbtn">2</button>
+                    <button onclick="changeprofile3()" class= "numberbtn">3</button>
+                </div>
+                <table class="colors">
+                    <thead>
+                    <tr>
+                        <th scope="col" style="text-align: left;">Background</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"><button onclick="bluebg()"class="button" style="background-color: rgb(0,204,255); border: none;">blue</button></td>
+                        <td scope="row"><button onclick="pinkbg()"class="button"style="background-color: rgb(255,121,255); border: none;">pink</button></td>
+                        <td scope="row"><button onclick="purplebg()"class="button" style="background-color:rgb(161,146,255); border: none;">purple</button></td>
+                        <td scope="row"><button onclick="orangebg()"class="button" style="background-color:rgb(255,142,23); border: none;">orange</button></td>
+                        <td scope="row"><button onclick="greenbg()"class="button" style="background-color:rgb(46,214,18); border: none;">green</button></td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <table class="colors">
+                    <thead>
+                    <tr>
+                        <th scope="col" style="text-align: left;">Alien</th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td scope="row"><button onclick="pinka()"class="button" style="background-color:rgb(255,169,214); border: none;">pink</button></td>
+                        <td scope="row"><button onclick="yellowa()"class="button" style= "background-color: rgb(255,255,0); border: none;">yellow</button></td>
+                        <td scope="row"><button onclick="greena()"class="button" style="background-color:rgb(67,255,70); border: none;">green</button></td>
+                        <td scope="row"><button onclick="bluea()"class="button" style="background-color:rgb(0,255,255); border: none;">blue</button></td>
+                        <td scope="row"><button onclick="orangea()"class="button" style="background-color:rgb(255,183,134); border: none;">orange</button></td>
+                    </tr>
+                </table>
+                <table class="center">
+                    <tr>
+                    <td><img src = "Images/learnmedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/planetsmedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/smartmedal.png"style="width:40%;height:40%;"></td>
+                    </tr>
+                    <tr>
+                    <td><img src =  "Images/quizmedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/starsmedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/profilemedal.png"style="width:40%;height:40%;"></td>
+                    </tr>
+                    <tr>
+                    <td><img src = "Images/timemedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/astromedal.png"style="width:40%;height:40%;"></td>
+                    <td><img src = "Images/alienmedal.png"style="width:40%;height:40%;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img src = "Images/completemedal.png"style="width:40%;height:40%;"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </body>        
+</html>

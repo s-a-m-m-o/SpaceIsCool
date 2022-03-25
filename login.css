@@ -1,0 +1,48 @@
+button { 
+  background-color: #522bad; 
+  width: 20%;
+   color: rgb(255, 255, 255); 
+   padding: 15px; 
+   margin: 10px 0px; 
+   border: none; 
+   cursor: pointer; 
+    } 
+form { 
+   border: 3px solid #000000; 
+} 
+input[type=email], input[type=password] { 
+   width: 75%; 
+   margin: 8px 0;
+   padding: 12px 20px; 
+   display: inline-block; 
+   border: 2px solid rgb(0, 0, 0); 
+   box-sizing: border-box; 
+}
+button:hover { 
+   opacity: 0.7; 
+} 
+
+.float-container {
+  width: 85%;
+}
+
+.float-left{ 
+  width: 35%;
+  padding: 2%;
+  margin-top: 5%;
+  margin-left: 10%;
+  float: left;
+  background-color: lightgray;
+  text-align: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #522bad;
+  border-radius: 10px;
+}
+
+.float-right {
+    width: 40%;
+    padding: 2%;
+    margin-top: 5%;
+    float: left;
+}
